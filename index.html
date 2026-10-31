@@ -3,142 +3,348 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>JORNAL DA MANHÃ: 30/10/2026</title>
+<title>Principais Notícias · 31/10/2026</title>
 <style>
-:root{--bg:#faf8f3;--fg:#1c1c1c;--muted:#5b5b5b;--rule:#1c1c1c;--soft:#e6e1d4;--box:#f1ede2;--link:#1d4a7a;
-box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#16171a;--fg:#ece9e1;--muted:#a5a29a;--rule:#ece9e1;--soft:#34353a;--box:#1f2024;--link:#8db7e8}}
-:root[data-theme="dark"]{--bg:#16171a;--fg:#ece9e1;--muted:#a5a29a;--rule:#ece9e1;--soft:#34353a;--box:#1f2024;--link:#8db7e8}
-html{scroll-padding-top:env(safe-area-inset-top,0px)}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--fg);font-family:Georgia,"Times New Roman",serif;line-height:1.6;font-size:17px}
-.wrap{max-width:680px;margin:0 auto;padding:16px 18px 40px}
-.mast{text-align:center;border-bottom:3px double var(--rule);padding:8px 0 10px;margin-bottom:6px}
-.mast h1{margin:0;font-size:1.9rem;letter-spacing:.14em;text-transform:uppercase}
-.mast p{margin:4px 0 0;font-size:.85rem;color:var(--muted);font-family:system-ui,sans-serif}
-.cover-img{border:1.5px dashed var(--muted);color:var(--muted);text-align:center;padding:46px 12px;margin:16px 0;font:italic .9rem system-ui,sans-serif;background:var(--box)}
-.kicker{font:700 .72rem system-ui,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 4px}
-h2.lead{font-size:1.75rem;line-height:1.2;margin:0 0 8px}
-h2.hed{font-size:1.4rem;line-height:1.25;margin:0 0 6px}
-.sub{font-style:italic;color:var(--muted);margin:0 0 12px}
-.chamadas{border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:8px 0;margin:14px 0}
-.chamadas ul{list-style:none;margin:0;padding:0}
-.chamadas li{padding:6px 0;border-bottom:1px solid var(--soft);font-size:.98rem}
-.chamadas li:last-child{border:0}
-.dados{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 4px}
-.dados div{flex:1 1 150px;background:var(--box);padding:8px 10px;text-align:center}
-.dados b{display:block;font-size:1.25rem}
-.dados span{font:.72rem system-ui,sans-serif;color:var(--muted)}
-section.news{margin-top:26px;border-top:1px solid var(--rule);padding-top:14px}
-.selo{display:inline-block;font:600 .68rem system-ui,sans-serif;letter-spacing:.05em;text-transform:uppercase;border:1px solid var(--muted);color:var(--muted);padding:2px 7px;margin-bottom:8px}
-p{margin:0 0 12px}
-details.entenda{background:var(--box);border-left:3px solid var(--rule);padding:8px 12px;margin:12px 0}
-details.entenda summary{cursor:pointer;font:700 .85rem system-ui,sans-serif}
-details.entenda p{margin:8px 0 0;font-size:.95rem}
-.fontes{font:.8rem/1.5 system-ui,sans-serif;color:var(--muted);margin-top:10px}
-.fontes a{color:var(--link)}
-.fim{margin-top:30px;border-top:3px double var(--rule);padding-top:12px}
-.fim h3{font-size:1.1rem;margin:14px 0 6px}
-.fim ul{margin:0 0 8px;padding-left:20px}
-.fim li{margin-bottom:6px;font-size:.95rem}
-.opc{font:.72rem system-ui,sans-serif;color:var(--muted)}
+:root{
+  --ink:#111418;--paper:#F7F5F0;--rule:#111418;--soft:#DDD9CE;--muted:#6B6860;--link:#1A3D6E;
+  --eco:#0F2C59;--eco-bg:#E0E7FF;--geo:#1B3B36;--geo-bg:#E6F4F1;--pol:#800020;--pol-bg:#FCE8E6;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)
+}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --ink:#E8E4DB;--paper:#141618;--rule:#E8E4DB;--soft:#2E3035;--muted:#9A9690;--link:#8AB3E0;
+  --eco-bg:#0A1A35;--geo-bg:#0C2020;--pol-bg:#280010
+}}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-padding-top:env(safe-area-inset-top,0px);background:var(--paper)}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,"Times New Roman",serif;font-size:17px;line-height:1.7}
+.page{max-width:720px;margin:0 auto;padding:0 18px 56px}
+
+.mast{padding:28px 0 16px;border-bottom:4px double var(--rule);text-align:center}
+.mast-name{font-size:clamp(2rem,6vw,3rem);font-weight:700;letter-spacing:.02em;line-height:1;text-transform:uppercase}
+.mast-rule{width:40px;height:2px;background:var(--ink);margin:10px auto}
+.mast-meta{font-family:system-ui,sans-serif;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+
+.cover{width:100%;display:block;border-bottom:1px solid var(--soft)}
+.cover svg{width:100%;height:auto;display:block}
+
+.above-fold{border-bottom:2px solid var(--rule);padding:18px 0 16px;margin-bottom:14px}
+.lead-kicker{font:700 .68rem/1 system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--pol);margin-bottom:8px}
+.lead-hed{font-size:clamp(1.6rem,4.5vw,2.2rem);line-height:1.18;font-weight:700;margin-bottom:8px}
+.lead-sub{font-style:italic;color:var(--muted);font-size:.97rem;margin-bottom:14px}
+
+.chamadas{border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.chamada{display:flex;gap:10px;padding:8px 0;border-bottom:1px solid var(--soft);font-size:.93rem;align-items:flex-start}
+.chamada:last-child{border-bottom:none}
+.chamada-cat{flex-shrink:0;font:700 .65rem/1.4 system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);width:80px;padding-top:3px}
+
+.dados{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:1px;background:var(--soft);border:1px solid var(--soft);margin:16px 0 4px}
+.dado{background:var(--paper);padding:10px 12px;text-align:center}
+.dado b{display:block;font-size:1.2rem;font-family:system-ui,sans-serif;font-weight:700}
+.dado small{font:.67rem/1.3 system-ui,sans-serif;color:var(--muted);letter-spacing:.04em;text-transform:uppercase}
+
+.news{margin-top:32px;padding-top:18px;border-top:1px solid var(--soft)}
+.news.pol{border-top:3px solid var(--pol)}.news.eco{border-top:3px solid var(--eco)}.news.geo{border-top:3px solid var(--geo)}
+.badge{display:inline-block;font:700 .64rem system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase;padding:3px 8px;border-radius:2px;margin-bottom:6px}
+.pol .badge{background:var(--pol-bg);color:var(--pol)}.eco .badge{background:var(--eco-bg);color:var(--eco)}.geo .badge{background:var(--geo-bg);color:var(--geo)}
+.selo{font:.64rem system-ui,sans-serif;color:var(--muted);border:1px solid var(--soft);padding:2px 6px;margin-left:6px;vertical-align:middle}
+.hed{font-size:clamp(1.2rem,3.5vw,1.55rem);line-height:1.22;font-weight:700;margin:8px 0 5px}
+.sub{font-style:italic;color:var(--muted);font-size:.94rem;margin-bottom:14px}
+.lide{font-weight:700;margin-bottom:14px;border-left:3px solid var(--rule);padding-left:12px}
+p{margin-bottom:12px}
+.pilar{margin:16px 0}
+.pilar-label{font:700 .67rem system-ui,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:5px;padding-bottom:3px;border-bottom:1px solid var(--soft)}
+details.entenda{background:var(--paper);filter:brightness(.97);border-left:3px solid var(--rule);padding:9px 13px;margin:14px 0}
+details.entenda summary{cursor:pointer;font:700 .82rem system-ui,sans-serif;user-select:none;list-style:none}
+details.entenda summary::before{content:"+ "}details[open].entenda summary::before{content:"− "}
+details.entenda p{margin:8px 0 0;font-size:.92rem}
+.fontes{font:.73rem/1.6 system-ui,sans-serif;color:var(--muted);margin-top:12px;padding-top:8px;border-top:1px dashed var(--soft)}
+.fontes a{color:var(--link);text-underline-offset:2px}
+
+.footer{margin-top:40px;padding-top:18px;border-top:4px double var(--rule)}
+.footer-section{margin-bottom:24px}
+.footer-title{font-size:1rem;font-weight:700;margin-bottom:10px}
+.footer-opc{font:.7rem system-ui,sans-serif;color:var(--muted);font-weight:400;margin-left:6px}
+.footer ul{padding-left:18px}.footer li{margin-bottom:7px;font-size:.93rem}
+.footer-stamp{text-align:center;font:.68rem system-ui,sans-serif;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-top:32px;padding-top:14px;border-top:1px solid var(--soft)}
 </style>
 </head>
 <body>
-<div class="wrap">
+<div class="page">
 
 <header class="mast">
-<h1>Jornal de Manhã</h1>
-<p>Sexta-feira, 30 de outubro de 2026 · Edição nº 01</p>
+  <div class="mast-name">Principais Notícias</div>
+  <div class="mast-rule"></div>
+  <div class="mast-meta">Sábado, 31 de outubro de 2026 &nbsp;·&nbsp; Edição nº 02</div>
 </header>
 
-<div class="cover-img">Espaço reservado para a imagem da capa</div>
+<!-- CAPA PADRÃO FIXA DO JORNAL -->
+<div class="cover" role="img" aria-label="Capa padrão do jornal Principais Notícias">
+<svg viewBox="0 0 720 220" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="covgrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#1a2235"/>
+    </linearGradient>
+    <linearGradient id="goldline" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0F2C59" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#C8A84B"/>
+      <stop offset="80%" stop-color="#C8A84B"/>
+      <stop offset="100%" stop-color="#0F2C59" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="goldline2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#800020" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#800020"/>
+      <stop offset="80%" stop-color="#0F2C59"/>
+      <stop offset="100%" stop-color="#0F2C59" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
 
-<p class="kicker">Política · Brasil</p>
-<h2 class="lead">TSE declara Lula reeleito com 51,79% dos votos válidos; Flávio Bolsonaro diz não reconhecer o resultado</h2>
-<p class="sub">PL reconheceu a vitória; PF cancelou os passaportes do senador após descumprimento de ordem do STF</p>
+  <!-- fundo -->
+  <rect width="720" height="220" fill="url(#covgrad)"/>
 
-<nav class="chamadas" aria-label="Chamadas do dia">
-<ul>
-<li><b>Economia (mundo):</b> Fed mantém juros entre 3,75% e 4% ao ano, com dois votos por alta</li>
-<li><b>Economia (Brasil):</b> Selic está em 13,75% e mercado projeta inflação acima do teto da meta</li>
-</ul>
-</nav>
+  <!-- linhas de pauta de fundo (textura de jornal) -->
+  <g opacity=".06" stroke="#E8E4DB" stroke-width=".8">
+    <line x1="0" y1="30"  x2="720" y2="30"/>
+    <line x1="0" y1="50"  x2="720" y2="50"/>
+    <line x1="0" y1="70"  x2="720" y2="70"/>
+    <line x1="0" y1="90"  x2="720" y2="90"/>
+    <line x1="0" y1="110" x2="720" y2="110"/>
+    <line x1="0" y1="130" x2="720" y2="130"/>
+    <line x1="0" y1="150" x2="720" y2="150"/>
+    <line x1="0" y1="170" x2="720" y2="170"/>
+    <line x1="0" y1="190" x2="720" y2="190"/>
+  </g>
 
-<div class="dados" aria-label="Dados do dia">
-<div><b>13,75%</b><span>Selic (desde 16/09)</span></div>
-<div><b>5,22%</b><span>IPCA 2026, projeção Focus</span></div>
-<div><b>3,75% a 4%</b><span>Juros nos EUA</span></div>
+  <!-- coluna divisória esquerda -->
+  <line x1="60" y1="0" x2="60" y2="220" stroke="#E8E4DB" stroke-width=".5" opacity=".08"/>
+  <!-- coluna divisória direita -->
+  <line x1="660" y1="0" x2="660" y2="220" stroke="#E8E4DB" stroke-width=".5" opacity=".08"/>
+
+  <!-- ornamento globo — círculo com meridianos e paralelos -->
+  <g transform="translate(360,110)" opacity=".09" fill="none" stroke="#E8E4DB" stroke-width=".8">
+    <circle cx="0" cy="0" r="88"/>
+    <ellipse cx="0" cy="0" rx="44" ry="88"/>
+    <ellipse cx="0" cy="0" rx="88" ry="28"/>
+    <ellipse cx="0" cy="0" rx="88" ry="60"/>
+    <line x1="-88" y1="0" x2="88" y2="0"/>
+    <line x1="0" y1="-88" x2="0" y2="88"/>
+  </g>
+
+  <!-- linha dourada superior -->
+  <rect x="0" y="18" width="720" height="1.5" fill="url(#goldline)" opacity=".9"/>
+
+  <!-- bloco central com nome -->
+  <rect x="140" y="38" width="440" height="144" fill="#0d1117" opacity=".72" rx="1"/>
+  <rect x="140" y="38" width="440" height="1.5" fill="url(#goldline)" opacity=".8"/>
+  <rect x="140" y="180" width="440" height="1.5" fill="url(#goldline)" opacity=".8"/>
+  <rect x="140" y="38" width="1.5" height="144" fill="#C8A84B" opacity=".3"/>
+  <rect x="578" y="38" width="1.5" height="144" fill="#C8A84B" opacity=".3"/>
+
+  <!-- PN monograma — canto superior esquerdo do bloco -->
+  <text x="160" y="72" font-family="Georgia,serif" font-size="22" font-weight="700"
+        fill="#C8A84B" opacity=".55" letter-spacing="2">PN</text>
+
+  <!-- nome principal -->
+  <text x="360" y="106" text-anchor="middle"
+        font-family="Georgia,'Times New Roman',serif"
+        font-size="38" font-weight="700" fill="#F0EDE6"
+        letter-spacing="4">PRINCIPAIS</text>
+  <text x="360" y="148" text-anchor="middle"
+        font-family="Georgia,'Times New Roman',serif"
+        font-size="38" font-weight="700" fill="#F0EDE6"
+        letter-spacing="4">NOTÍCIAS</text>
+
+  <!-- subtítulo -->
+  <text x="360" y="170" text-anchor="middle"
+        font-family="system-ui,sans-serif"
+        font-size="9" fill="#C8A84B" opacity=".8"
+        letter-spacing="5">INFORMAÇÃO · ANÁLISE · PENSAMENTO CRÍTICO</text>
+
+  <!-- linha colorida inferior (eco + pol + geo) -->
+  <rect x="0" y="200" width="720" height="2" fill="url(#goldline2)" opacity=".85"/>
+  <rect x="0" y="204" width="240" height="16" fill="#0F2C59" opacity=".6"/>
+  <rect x="240" y="204" width="240" height="16" fill="#800020" opacity=".6"/>
+  <rect x="480" y="204" width="240" height="16" fill="#1B3B36" opacity=".6"/>
+  <text x="120" y="216" text-anchor="middle" font-family="system-ui,sans-serif" font-size="7.5"
+        fill="#E0E7FF" opacity=".9" letter-spacing="3">ECONOMIA</text>
+  <text x="360" y="216" text-anchor="middle" font-family="system-ui,sans-serif" font-size="7.5"
+        fill="#FCE8E6" opacity=".9" letter-spacing="3">POLÍTICA</text>
+  <text x="600" y="216" text-anchor="middle" font-family="system-ui,sans-serif" font-size="7.5"
+        fill="#E6F4F1" opacity=".9" letter-spacing="3">GEOPOLÍTICA</text>
+</svg>
 </div>
 
-<section class="news" id="politica">
-<span class="selo">Dado oficial reproduzido por imprensa</span>
-<h2 class="hed">TSE declara Lula reeleito com 51,79% dos votos válidos; Flávio Bolsonaro diz não reconhecer o resultado</h2>
-<p class="sub">PL reconheceu a vitória; PF cancelou os passaportes do senador após descumprimento de ordem do STF</p>
-<p><strong>O presidente Luiz Inácio Lula da Silva (PT) foi reeleito no segundo turno de 25 de outubro, com 64.256.232 votos, ou 51,79% dos votos válidos, contra 59.826.041 (48,21%) de Flávio Bolsonaro (PL), segundo dados do TSE com 100% das urnas apuradas.</strong></p>
-<p>A diferença foi de cerca de 4,43 milhões de votos. No primeiro turno, Lula ficou atrás (45,16% contra 47,03%). A posse do presidente e do vice, Geraldo Alckmin, está prevista para 5 de janeiro de 2027.</p>
-<p>O PL reconheceu o resultado em 26 de outubro e pediu esclarecimentos sobre pontos da campanha. Flávio Bolsonaro disse no dia da eleição que era impossível reconhecê-lo. Nas fontes oficiais consultadas, não há decisão de órgão eleitoral ou judicial que acolha alegação capaz de alterar o resultado.</p>
-<p>Em outra frente, o ministro Alexandre de Moraes, do STF, determinou que o senador entregasse os passaportes à Polícia Federal em 24 horas, em processo sigiloso, segundo a Agência Brasil. O prazo terminou em 27 de outubro e a PF cancelou os documentos. Segundo a Agência Estado, Flávio deixou o país e entrou nos EUA com passaporte diplomático já cancelado. A Agência Brasil informa que a PF também apura possível participação dele em operações financeiras ligadas a uma empresa de Portugal; trata-se de investigação, sem condenação.</p>
-<details class="entenda"><summary>Entenda: o que são votos válidos</summary>
-<p>São os votos dados a candidatos, sem contar brancos e nulos. No segundo turno, vence quem tem mais da metade deles.</p></details>
-<p class="fontes"><strong>Fontes:</strong>
-<a href="https://www.dgabc.com.br/Noticia/4364923/lula-e-reeleito-presidente-e-supera-flavio-bolsonaro">dados do TSE, via DGABC (25/10)</a> ·
-<a href="https://www.nsctotal.com.br/politica/apuracao-eleicoes-2026-ao-vivo-segundo-turno">1º turno, dados do TSE, via NSC Total</a> ·
-<a href="https://correiodoestado.com.br/politica/abstencao-cai-no-segundo-turno-na-comparacao-com-o-primeiro-em-ms/475521/">posse e vice, Correio do Estado</a> ·
-<a href="https://www.correiobraziliense.com.br/politica/2026/10/7528401-partido-de-flavio-bolsonaro-pl-reconhece-resultado-da-eleicao.html">PL reconhece resultado, Correio Braziliense (26/10)</a> ·
-<a href="https://jovempan.com.br/politica/e-impossivel-reconhecer-o-resultado-das-eleicoes-diz-flavio-bolsonaro-apos-derrota/">declaração de Flávio, Jovem Pan</a> ·
-<a href="https://tribunahoje.com/noticias/politica/2026/10/27/197322-policia-federal-cancela-passaportes-de-flavio-bolsonaro">Agência Brasil, via Tribuna Hoje (27/10)</a> ·
-<a href="https://conjur.com.br/2026-out-27/moraes-manda-flavio-entregar-passaporte-e-o-proibe-de-deixar-o-pais/">Conjur (27/10)</a> ·
-<a href="https://www.diariodaregiao.com.br/politica/flavio-bolsonaro-usou-passaporte-diplomatico-ao-qual-senadores-tem-direito-para-entrar-nos-eua.1793210500965">Agência Estado, via Diário da Região (28/10)</a>.
-O site do TSE não foi consultado diretamente.</p>
-</section>
+<!-- ACIMA DA DOBRA -->
+<div class="above-fold">
+  <p class="lead-kicker">Geopolítica · Brasil · Internacional</p>
+  <h1 class="lead-hed">Itamaraty convoca diplomata argentina por rota de fuga de Flávio; Brasil e Argentina entram em crise diplomática</h1>
+  <p class="lead-sub">Governo Milei mobilizou inteligência e ministérios para viabilizar a passagem; Copom decide a Selic em três dias</p>
+  <div class="chamadas">
+    <div class="chamada"><span class="chamada-cat">Política Brasil</span><span>Capital político de Flávio Bolsonaro diminui após autoexílio, segundo fontes americanas ouvidas pela Reuters; oposição no Congresso se reorganiza</span></div>
+    <div class="chamada"><span class="chamada-cat">Economia Brasil</span><span>Copom se reúne em 3 e 4 de novembro com mercado projetando manutenção da Selic em 13,75% e inflação ainda acima do teto da meta</span></div>
+  </div>
+</div>
 
-<section class="news" id="fed">
-<p class="kicker">Economia · Mundo</p>
-<span class="selo">Confirmada em fonte oficial</span>
-<h2 class="hed">Fed mantém juros entre 3,75% e 4% ao ano, com dois votos por alta</h2>
-<p class="sub">Comitê diz que a atividade econômica cresce em ritmo forte e que a inflação segue elevada</p>
-<p><strong>O Federal Reserve, banco central dos Estados Unidos, manteve na quarta-feira (28) a taxa básica de juros na faixa de 3,75% a 4% ao ano. A decisão foi aprovada por 10 votos a 2; Lisa Cook e Beth Hammack votaram contra, por preferirem alta de 0,25 ponto percentual.</strong></p>
-<p>Em comunicado, o Fed afirmou que a atividade econômica se expande em ritmo forte e que os gastos domésticos têm sido resistentes. Segundo o texto, os ganhos de emprego acompanham o crescimento da força de trabalho e a taxa de desemprego mudou pouco. A inflação segue elevada, e o comitê diz que trabalha para levá-la de volta à meta de 2%.</p>
-<details class="entenda"><summary>Entenda: por que o juro dos EUA importa para o Brasil</summary>
-<p>A taxa americana é referência para o mundo. Quando fica alta, investidores tendem a preferir títulos dos EUA, o que pode influenciar o dólar e o fluxo de recursos para países emergentes. Esse efeito é uma avaliação de mercado e não consta do comunicado.</p></details>
-<p class="fontes"><strong>Fonte:</strong> <a href="https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm">Federal Reserve, comunicado do FOMC de 28/10/2026</a> (fonte oficial primária).</p>
-</section>
+<!-- DADOS DO DIA -->
+<div class="dados">
+  <div class="dado"><b>13,75%</b><small>Selic desde 16/set</small></div>
+  <div class="dado"><b>13,75%</b><small>Selic esperada Focus 14/set</small></div>
+  <div class="dado"><b>3 e 4/nov</b><small>Próxima reunião Copom</small></div>
+  <div class="dado"><b>5,22%</b><small>IPCA 2026 — Focus 19/out</small></div>
+</div>
 
-<section class="news" id="selic">
-<p class="kicker">Economia · Brasil</p>
-<span class="selo">Dado oficial reproduzido por imprensa</span>
-<h2 class="hed">Selic está em 13,75% e mercado projeta inflação de 5,22% em 2026, acima do teto da meta</h2>
-<p class="sub">Próxima decisão do Copom é em 3 e 4 de novembro</p>
-<p><strong>O Copom reduziu a Selic, taxa básica de juros do Brasil, de 14% para 13,75% ao ano em 16 de setembro, por decisão unânime. A próxima reunião do comitê está marcada para 3 e 4 de novembro.</strong></p>
-<p>No boletim Focus de 19 de outubro, as instituições consultadas pelo Banco Central projetaram inflação de 5,22% para 2026, acima do teto da meta, que é de 4,50%. A projeção do mercado para a Selic no fim do ano é de 13,25%. Segundo a Suno Notícias, a estimativa de crescimento do PIB de 2026 caiu de 1,85% para 1,83%; a data desse boletim não foi confirmada.</p>
-<details class="entenda"><summary>Entenda: Selic, Focus e teto da meta</summary>
-<p>A Selic é a taxa básica de juros e influencia o custo do crédito. O Focus é uma pesquisa semanal do Banco Central com mais de cem instituições financeiras. A meta de inflação tem um teto de tolerância; quando a projeção o ultrapassa, a inflação é considerada acima do limite.</p></details>
-<p class="fontes"><strong>Fontes:</strong>
-<a href="https://basedeconhecimento.cgu.gov.br/bitstreams/ea1bada8-b405-4a1a-8a5b-9c2b170d784e/download">Comunicado 45.693 do Banco Central (meta de 14%, agosto)</a> ·
-<a href="https://atlaspublico.com.br/bcb/noticias/copom-reduz-selic-para-13-75pct-ao-ano-em-decisao-unanime-87748">decisão de setembro, Atlas Público</a> ·
-<a href="https://exame.com/economia/copom-inicia-reuniao-com-expectativa-de-corte-da-selic-para-1375/">calendário, Exame (15/09)</a> ·
-<a href="https://www.correiobraziliense.com.br/economia/2026/10/7523151-focus-mercado-mantem-projecao-de-alta-do-ipca-mas-reduz-a-do-pib.html">Focus de 19/10, Correio Braziliense</a> ·
-<a href="https://www.suno.com.br/noticias/?p=667655">PIB, Suno Notícias</a>.
-O site do Banco Central não foi consultado diretamente.</p>
-</section>
+<!-- NOTÍCIA 1 -->
+<article class="news geo">
+  <span class="badge">Geopolítica · Internacional</span>
+  <span class="selo">Dado oficial reproduzido por imprensa · múltiplas agências</span>
+  <h2 class="hed">Itamaraty convoca diplomata argentina por passagem de Flávio Bolsonaro; governo Milei teria mobilizado inteligência e dois ministérios</h2>
+  <p class="sub">Reuters e Euronews confirmaram a rota via Argentina; oposição argentina cobra explicações de Milei no Congresso</p>
 
-<footer class="fim">
-<h3>Para pensar <span class="opc">(opcional)</span></h3>
-<ul>
-<li>Que instâncias podem rever um resultado eleitoral no Brasil, e o que cada uma já decidiu?</li>
-<li>Qual é a diferença entre não reconhecer um resultado politicamente e contestá-lo pelas vias legais?</li>
-<li>Como a diferença de juros entre EUA e Brasil pode afetar o dólar e o custo do crédito?</li>
-<li>Quem sente mais uma Selic alta: quem toma crédito, quem investe em renda fixa ou o governo, que paga juros sobre a dívida?</li>
-</ul>
+  <p class="lide">O Ministério das Relações Exteriores do Brasil convocou a encarregada de Negócios da Argentina para explicar a passagem do senador Flávio Bolsonaro pelo território argentino rumo aos EUA. Segundo a Gazeta do Povo, com base em jornal argentino, o governo de Javier Milei mobilizou a Secretaria de Inteligência, o Ministério da Segurança e a Chancelaria para viabilizar a operação. O governo argentino nega participação oficial.</p>
 
-<h3>Nota da redação</h3>
-<ul>
-<li>Tecnologia: não foi encontrado fato do dia em fonte oficial nesta edição.</li>
-<li>Os sites do TSE e do Banco Central não foram consultados diretamente; os números vêm de imprensa que reproduz o dado oficial.</li>
-<li>Fora desta edição por não atender ao critério de fontes: relato de fonte única sobre uma carta de Flávio Bolsonaro e análises de especialistas.</li>
-<li>Esta edição é um esboço de página; o visual será ajustado.</li>
-</ul>
+  <div class="pilar">
+    <p class="pilar-label">O Fato Central</p>
+    <p>Flávio Bolsonaro e a família entraram na Argentina por Foz do Iguaçu na noite de terça-feira (27) e seguiram de jato para os EUA, onde têm visto temporário, segundo o Itamaraty citado pelo Jornal GGN. A saída do Brasil foi noticiada pela Reuters e pelo New York Times com base em fontes anônimas. O coordenador de campanha e porta-voz de Milei negaram qualquer participação, segundo a Euronews. A Agência ANSA (italiana) confirmou que a oposição argentina apresentou requerimentos ao Congresso pedindo relatório do governo em sete dias.</p>
+  </div>
+
+  <div class="pilar">
+    <p class="pilar-label">Diferentes Perspectivas</p>
+    <p>O governo Lula convocou a diplomata argentina e aguarda explicações formais, mantendo, segundo o D-Noticias, postura pragmática para não romper relações com Buenos Aires. A oposição argentina, por sua vez, cobra Milei internamente e acusa o governo de possível cumplicidade. Milei havia participado da campanha de Flávio no Brasil. O Correio Braziliense relata que Santiago Caputo, principal assessor de Milei, teria sido peça central na operação — o que o governo argentino também nega. A Reuters e o New York Times, principais referências internacionais, confirmaram a rota e a entrada nos EUA, sem confirmar o papel da Argentina.</p>
+  </div>
+
+  <div class="pilar">
+    <p class="pilar-label">Contexto e Causas Profundas</p>
+    <p>Milei construiu aliança pública com Flávio durante a campanha presidencial brasileira e com os Bolsonaro em geral. A operação, se confirmada, representaria interferência de um governo estrangeiro em decisão judicial brasileira — a ordem do STF de entrega dos passaportes. Em 2022, Jair Bolsonaro também viajou aos EUA antes da posse de Lula, mas sem descumprir ordem judicial em aberto. Eduardo Bolsonaro, irmão de Flávio, já reside nos EUA e foi condenado pelo STF em junho por tentar obter interferência do governo Trump no julgamento do pai, segundo o Estado de Minas.</p>
+  </div>
+
+  <div class="pilar">
+    <p class="pilar-label">Desdobramentos e Impactos</p>
+    <p>No curto prazo, a crise diplomática com a Argentina pode afetar o Mercosul e as negociações bilaterais. O STF deve avaliar medidas adicionais em relação a Flávio. No médio prazo, a relação Lula–Trump ficará suspensa até que o governo americano defina sua posição oficial sobre o caso, e a oposição no Congresso brasileiro, que tem o PL como maior bancada da Câmara, precisará definir como opera sem seu principal líder no país.</p>
+  </div>
+
+  <details class="entenda">
+    <summary>Entenda: o que significa convocar um diplomata</summary>
+    <p>Convocar a encarregada de Negócios — cargo equivalente ao de embaixador interino — é um gesto formal de protesto diplomático. Significa que o governo brasileiro exige explicações oficiais e registra descontentamento, sem chegar a romper relações. É o passo seguinte à nota de protesto e anterior a medidas mais severas, como retirar o embaixador.</p>
+  </details>
+
+  <div class="fontes">
+    <strong>Fontes:</strong>
+    Convocação do Itamaraty: <a href="https://jornalggn.com.br/politica/itamaraty-convoca-representante-argentina-para-esclarecer-fuga-de-flavio-bolsonaro-aos-eua/">Jornal GGN, 30/10</a> ·
+    Milei mobilizou inteligência e ministérios: <a href="https://www.gazetadopovo.com.br/mundo/governo-de-milei-mobiliza-ministerios-para-facilitar-ida-de-flavio-aos-eua/">Gazeta do Povo, 29/10</a> (com base em jornal argentino) ·
+    Oposição argentina no Congresso: <a href="https://ansabrasil.com.br/brasil/noticias/mundo/2026/10/28/oposicao-exige-explicacoes-de-milei-sobre-fuga-de-flavio-bolsonaro-da-argentina_2c22e0ec-366d-4e3c-b078-9c15d6b56f58.html">Agência ANSA, 28/10</a> ·
+    Governo argentino nega: <a href="https://pt.euronews.com/2026/10/27/policia-brasileira-investiga-possivel-fuga-de-flavio-bolsonaro-para-os-eua-via-argentina">Euronews, 27/10</a> ·
+    Rota e entrada nos EUA (Reuters / NYT): <a href="https://www.diariodepernambuco.com.br/politica/2026/10/11727798-eua-vao-dar-visto-a-flavio-bolsonaro-que-deixou-o-brasil-sem-entregar-passaportes-ao-stf.html">Diário de Pernambuco, 27/10</a> ·
+    Brasil mantém pragmatismo: <a href="https://www.dnoticias.pt/2026/10/29/510939-brasil-mantem-pragmatismo-com-eua-e-argentina-apos-fuga-de-flavio-bolsonaro/">D-Noticias, 29/10</a> ·
+    Eduardo Bolsonaro condenado pelo STF: <a href="https://www.em.com.br/politica/2026/10/7530958-trump-rejeita-flavio-e-nao-pretende-reconhece-lo-como-lider-do-brasil-afirma-agencia.html">Estado de Minas, 30/10</a>
+  </div>
+</article>
+
+<!-- NOTÍCIA 2 -->
+<article class="news pol">
+  <span class="badge">Política · Brasil</span>
+  <span class="selo">Apuração de múltiplas agências</span>
+  <h2 class="hed">Capital político de Flávio Bolsonaro diminui após autoexílio, segundo fontes americanas ouvidas pela Reuters; oposição no Congresso se reorganiza sem ele</h2>
+  <p class="sub">Conservadores brasileiros criticaram a fuga; PL mantém maior bancada da Câmara e negocia governabilidade com Lula</p>
+
+  <p class="lide">O capital político de Flávio Bolsonaro diminuiu com o autoexílio, segundo avaliação de terceira autoridade americana ouvida pela Reuters. Conservadores brasileiros que esperavam vê-lo à frente da oposição nos próximos anos criticaram a decisão de deixar o país. O PL, que saiu das eleições como maior força da Câmara, precisará reorganizar sua liderança interna.</p>
+
+  <div class="pilar">
+    <p class="pilar-label">O Fato Central</p>
+    <p>A Reuters apurou com três autoridades americanas que o governo Trump não pretende endossar Flávio como líder do Brasil. Uma das fontes avaliou que a fuga enfraqueceu seu peso político. Marco Rubio, secretário de Estado, teria articulado a entrada de Flávio nos EUA, segundo aliados de Trump — o que o Departamento de Estado não confirmou nem negou, segundo o Estado de Minas. Jair Bolsonaro pediu ao STF autorização para receber o presidente do PL em sua casa, indicando que a articulação do partido continua no Brasil.</p>
+  </div>
+
+  <div class="pilar">
+    <p class="pilar-label">Diferentes Perspectivas</p>
+    <p>Aliados de Flávio argumentam que ele estava em risco e que a decisão foi necessária. Críticos dentro da própria direita apontam que a fuga rompe com a narrativa de resistência e enfraquece a oposição no Congresso. O governo Lula, segundo o Correio Braziliense, aguarda a diminuição das tensões para nomear novo embaixador nos EUA, sinalizando que prefere administrar o conflito sem escalada.</p>
+  </div>
+
+  <div class="pilar">
+    <p class="pilar-label">Contexto e Causas Profundas</p>
+    <p>Flávio responde a dois processos criminais no STF. A ordem de entrega dos passaportes integra ao menos um desses processos, em instrução sigilosa. O roteiro replica o de 2022, quando Jair Bolsonaro viajou aos EUA antes da posse de Lula, mas voltou ao Brasil — diferença relevante para o desdobramento jurídico e político.</p>
+  </div>
+
+  <div class="pilar">
+    <p class="pilar-label">Desdobramentos e Impactos</p>
+    <p>Com Flávio fora do país, a negociação do PL com o governo para aprovação de projetos tende a ficar mais complexa. O STF pode ampliar as investigações para aliados e familiares. O governo Lula inicia a transição com a maior bancada de oposição da história recente e precisará de acordos constantes com o Centrão para governar.</p>
+  </div>
+
+  <div class="fontes">
+    <strong>Fontes:</strong>
+    Reuters (capital político diminuiu, Trump não endossa): <a href="https://www.em.com.br/politica/2026/10/7530958-trump-rejeita-flavio-e-nao-pretende-reconhece-lo-como-lider-do-brasil-afirma-agencia.html">Estado de Minas, 30/10</a> ·
+    Rubio teria articulado entrada (aliados de Trump): <a href="https://www.diariodepernambuco.com.br/politica/2026/10/11727798-eua-vao-dar-visto-a-flavio-bolsonaro-que-deixou-o-brasil-sem-entregar-passaportes-ao-stf.html">Diário de Pernambuco, 27/10</a> ·
+    Lula aguarda tensões para embaixador: <a href="https://www.folhape.com.br/politica/brasil-convoca-representante-da-argentina-por-fuga-de-flavio-bolsonaro/521632/">Folha de PE, 30/10</a> ·
+    Flávio enfrenta isolamento: <a href="https://www.em.com.br/politica/2026/10/7530039-flavio-bolsonaro-enfrenta-isolamento-apos-carta-golpista-e-fuga.html">Estado de Minas, 29/10</a>
+  </div>
+</article>
+
+<!-- NOTÍCIA 3 -->
+<article class="news eco">
+  <span class="badge">Economia · Brasil</span>
+  <span class="selo">Dado oficial reproduzido por imprensa · Agência Brasil</span>
+  <h2 class="hed">Copom se reúne em 3 e 4 de novembro; mercado projeta manutenção da Selic em 13,75% com inflação acima do teto</h2>
+  <p class="sub">Expectativa do Focus antes de setembro apontava para 13,75% ao fim de 2026; cenário pós-eleitoral e juros dos EUA adicionam incerteza</p>
+
+  <p class="lide">O Comitê de Política Monetária do Banco Central inicia em três dias a sétima reunião de 2026. O mercado, segundo o Boletim Focus de 14 de setembro, projetava a Selic em 13,75% ao fim do ano — o que indicaria manutenção nesta reunião. A inflação esperada (IPCA 2026) seguia acima do teto da meta de 4,5% no Focus de 19 de outubro, em 5,22%.</p>
+
+  <div class="pilar">
+    <p class="pilar-label">O Fato Central</p>
+    <p>A reunião de novembro é a penúltima do ano — a última ocorre em 8 e 9 de dezembro. O Copom cortou a Selic de 14% para 13,75% em 16 de setembro, por decisão unânime. O Focus de 14 de setembro projetava que essa poderia ser a última redução do ano, com a Selic encerrando 2026 em 13,75%. O cenário pós-eleitoral (incerteza fiscal, câmbio e relação com EUA) não estava precificado nessas projeções, que são de meados de setembro.</p>
+  </div>
+
+  <div class="pilar">
+    <p class="pilar-label">Diferentes Perspectivas</p>
+    <p>O mercado financeiro, segundo o Focus de setembro, apostava no fim do ciclo de cortes. O governo (Fazenda) projetava PIB de 2% para 2026 — crescimento que, se confirmado, sustenta alguma demanda e pressiona a inflação. O Banco Central, mais conservador, projetava 1,8% de crescimento. A tensão diplomática pós-eleitoral com EUA e Argentina pode pressionar o câmbio e adicionar incerteza inflacionária não capturada nas projeções de setembro.</p>
+  </div>
+
+  <div class="pilar">
+    <p class="pilar-label">Contexto e Causas Profundas</p>
+    <p>O Brasil iniciou 2026 com a Selic em 15% ao ano. O ciclo de cortes ao longo do ano refletiu melhora nas expectativas de inflação e atividade econômica moderada. O Fed americano, ao manter juros altos (3,75%–4%), limita o espaço do Banco Central brasileiro para cortar, pois juros mais altos nos EUA atraem capital e pressionam o câmbio no Brasil.</p>
+  </div>
+
+  <div class="pilar">
+    <p class="pilar-label">Desdobramentos e Impactos</p>
+    <p>Uma manutenção confirma o fim do ciclo de cortes em 2026. Um corte adicional surpreenderia o mercado e poderia pressionar o câmbio se percebido como descuido com a inflação. A decisão de dezembro será o último ajuste do mandato do atual presidente do BC antes de possíveis mudanças na diretoria com o novo governo.</p>
+  </div>
+
+  <details class="entenda">
+    <summary>Entenda: Boletim Focus e projeção de mercado</summary>
+    <p>O Boletim Focus é uma pesquisa semanal do Banco Central com mais de cem instituições financeiras. Ele mostra para onde o mercado acredita que vão a Selic, a inflação e o PIB. Não é uma previsão do Banco Central — é a mediana das expectativas do mercado. A projeção de 13,75% para fim de 2026 é de meados de setembro e pode estar desatualizada.</p>
+  </details>
+
+  <div class="fontes">
+    <strong>Fontes:</strong>
+    Calendário do Copom e reunião de setembro (Agência Brasil): <a href="https://www.opovo.com.br/noticias/economia/2026/08/04/amp/copom-inicia-reuniao-que-definira-taxa-basica-de-juros.html">O Povo, 4/8</a> e <a href="https://exame.com/economia/copom-inicia-reuniao-com-expectativa-de-corte-da-selic-para-1375/">Exame, 15/9</a> ·
+    Selic em 13,75% desde 16/set: <a href="https://atlaspublico.com.br/bcb/noticias/copom-reduz-selic-para-13-75pct-ao-ano-em-decisao-unanime-87748">Atlas Público, 16/9</a> ·
+    Focus de 14/set (mercado projeta 13,75% fim do ano): <a href="https://www.diariodepernambuco.com.br/economia/2026/09/11723875-mercado-projeta-corte-da-selic-para-1375.html">Diário de Pernambuco, 14/9</a> ·
+    Focus de 19/out (IPCA 5,22%): <a href="https://www.correiobraziliense.com.br/economia/2026/10/7523151-focus-mercado-mantem-projecao-de-alta-do-ipca-mas-reduz-a-do-pib.html">Correio Braziliense</a> — site do BC não consultado diretamente.
+  </div>
+</article>
+
+<!-- RODAPÉ -->
+<footer class="footer">
+  <div class="footer-section">
+    <p class="footer-title">Para pensar <span class="footer-opc">(opcional)</span></p>
+    <ul>
+      <li>O que distingue, do ponto de vista jurídico e diplomático, a fuga de 2026 da viagem de Jair Bolsonaro aos EUA em 2022?</li>
+      <li>Quando um governo estrangeiro facilita a saída de um cidadão investigado por outro país, que normas de direito internacional podem estar em jogo?</li>
+      <li>Como a ausência do líder da oposição do país afeta a dinâmica de poder no Congresso e a capacidade de fiscalização do governo?</li>
+      <li>Com inflação acima do teto da meta e câmbio pressionado, que fatores o Copom precisa pesar ao decidir entre manter ou cortar juros?</li>
+    </ul>
+  </div>
+
+  <div class="footer-section">
+    <p class="footer-title">Nota da redação</p>
+    <ul>
+      <li><strong>Tecnologia:</strong> nenhum fato do dia verificado em fonte oficial ou agência. Editoria ausente nesta edição.</li>
+      <li>A participação direta do governo Milei não foi confirmada por fonte oficial argentina; o governo nega. A informação vem de jornal argentino reproduzido pela imprensa brasileira.</li>
+      <li>As projeções do Focus citadas são de 14 e 19 de setembro/outubro; podem estar desatualizadas em relação ao cenário pós-eleitoral.</li>
+      <li>Site do Banco Central não foi consultado diretamente; dados vêm de imprensa que reproduz comunicados oficiais.</li>
+      <li>Este arquivo (index.html) é substituído a cada nova edição; o link permanece fixo.</li>
+    </ul>
+  </div>
+
+  <p class="footer-stamp">Principais Notícias · 31/10/2026 · Nº 02</p>
 </footer>
 
 </div>
